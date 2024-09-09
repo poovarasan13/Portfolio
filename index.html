@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poovarasan Saravanan</title>
 </head>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 <link rel="shortcut icon" type="icon" href="./images/logo.jpg">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -14,6 +16,12 @@
   height:30px;
   width:30px;
     }
+    .design {
+            transition: transform 0.3s ease;
+        }
+        .design:hover {
+            transform: scale(1.1);
+        }
    
     @media(min-width:311px)
      {
@@ -57,18 +65,19 @@
      @media(min-width:768px)
      {
       .card-design{
-        width:125px;
+        width:105px;
         /* height:340px; */
       }
      }
      @media(min-width:1000px)
      {
       .card-design{
-        width:135px;
+        width:115px;
         /* height:340px; */
       }
+    
      }
-     
+  
    
 
 .fixed-button {
@@ -80,52 +89,53 @@
     
 </style>
 <body>
-    <nav class="navbar navbar-expand-lg bg-primary  fixed-top">
+    <nav class="navbar navbar-expand-lg bg-primary  fixed-top" >
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            
     
             <a class="navbar-brand  mx-auto">
               <div class="row">
-                <div class="col">  <h3 class="mb-0 fw-bold text-white text-center"><img src="./images/logo.jpg" class="img-fluid logo"></span></h3></div>
+                <div class="col">  <h3 class="mb-0 fw-bold text-white ">Portfoilo</span></h3></div>
                 
               </div>
               
                 
             </a>
-             
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
                
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-md-5 ">
+                        <ul class="navbar-nav  mx-auto mb-2 mb-lg-0 gap-md-5 ">
                             <li class="nav-item active fw-bold">
-                              <a class="nav-link  text-white  icon-link icon-link-hover " href="#main" >Home</a>
+                              <a class="nav-link  text-white  icon-link icon-link-hover flex-column" href="#main" >Home</a>
                                   </li>
                             <li class="nav-item active fw-bold">
-                                <a class="nav-link text-white icon-link icon-link-hover"  href="#about" >About</a>
+                                <a class="nav-link text-white icon-link icon-link-hover flex-column"  href="#about" >About</a>
                             </li>
                             
                             <li class="nav-item active fw-bold">
-                                <a class="nav-link text-white icon-link icon-link-hover" href="#skill" >Skills</a>
+                                <a class="nav-link text-white icon-link icon-link-hover flex-column" href="#skill" >Skills</a>
                             </li>
                             <li class="nav-item active fw-bold">
-                              <a class="nav-link text-white icon-link icon-link-hover" href="#project" >Projects</a>
+                              <a class="nav-link text-white icon-link icon-link-hover flex-column" href="#project" >Projects</a>
                           </li>
                           <li class="nav-item active fw-bold">
-                            <a class="nav-link text-white icon-link icon-link-hover"  href="#contact"> Contact</a>
+                            <a class="nav-link text-white icon-link icon-link-hover flex-column"  href="#contact"> Contact</a>
                         </li>
                         
                         </ul>
                         
 
                     </div> 
-                    <div class="text me-lg-5">   <button class="btn btn-light btn-sm ">Hire Me</button>
-                    </div>    
-        </div>
+                   
+                    </div>  
+                      
+        
        </nav> 
        <script>
         const array = ['Poovarasan',  '普瓦拉桑 ', 'بوفاراسان ','プーバラサン '];
-                    //tamil       english      hindi      chinese   arabic  japanese
+                    //       english      hindi      chinese   arabic  japanese
         let index = 0; 
     
         function updateMessage(){
@@ -140,7 +150,8 @@
     
 
        <section id="main">
-        <div class="container mt-5 pt-5">
+        <div class="container mt-3 pt-5">
+            <div data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0"></div>
             <div class="row mt-md-4 mt-0  ">
                 <div class="col-12 col-md-7  mt-3  order-2 order-md-1">
                     <div class="conatiner-fluid">
@@ -162,8 +173,8 @@
                             <div class="col-2 mt-1" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i href  class="bi bi-instagram text-primary h2"></i></div>
                             <div class="col-2 mt-1" data-toggle="tooltip" data-placement="bottom" title="Linkedin"><a href="https://github.com/poovarasan13"> <i class="bi bi-linkedin text-primary h2"></a></i></div>
                             <div class="col-2 mt-1" data-toggle="tooltip" data-placement="bottom" title="Github"><a href="https://github.com/poovarasan13"> <i class="bi bi-github text-primary h2"></a></i></div>
-                            <div class="col-5 ">
-                                <div class="btn btn-primary btn-sm ">Download CV</div>
+                            <div class="col-5 mt-2">
+                                <a href="./reume-239.pdf" class="btn btn-primary btn-sm"download="Poovarasan-Resume"> Download CV</a>
                             </div>
                         </div>
                     </div>
@@ -183,8 +194,8 @@
 
 
        <section id="about">
-        <div class="container mt-5">
-            <div class="row">
+        <div class="container mt-5 pt-5">
+            <div class="row mt-5">
                 <div class="col display-5 text-center">About</div>
             </div>
             <div class="row  mt-4">
@@ -221,7 +232,7 @@ I am excited about the endless possibilities in web development and look forward
                             <div class="fs-5 text-secondary">BACHELOR OF DEGREE</div>
                             <div  class="text">Information Technology</div>
                             <div class="text">GPA: 8.41</div>
-                            <div class="text fw-bold">September 2022 -Till</div>
+                            <div class="text fw-bold">September 2022 -2026(Pursuing)</div>
                         </div>
                     </div>
 
@@ -240,10 +251,10 @@ I am excited about the endless possibilities in web development and look forward
     </section>
 
     <scetion id="skill">
-        <div class="container pt-4">
+        <div class="container pt-5 mt-5">
             <div class=" display-5 text-center mt-4 mb-3">SKILLS</div>
-            <div class="row justify-content-center row-cols-2 row-cols-md-4 row-cols-lg-6" >
-               <div class="col-5   text-center">
+            <div class="row justify-content-center row-cols-2 row-cols-md-4 row-cols-lg-6 my-4 py-5" >
+               <div class="col-5   text-center design">
                 <div class="card rounded-circle card-design">
                     <div class="card-body ">
                         <div class="card-text">
@@ -264,8 +275,51 @@ I am excited about the endless possibilities in web development and look forward
                 </div>
               
                </div>
-               <div class="col-5 text-center">
-                <div class="card rounded-circle card-design" >
+                 <div class="col-5   text-center design">
+                <div class="card rounded-circle card-design">
+                    <div class="card-body ">
+                        <div class="card-text">
+                            <div class="img-fluid ">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"  viewBox="0 0 48 48">
+                                    <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"></path><path fill="#EEE" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"></path>
+                                    </svg>
+                        </div>
+                          
+                        </div>
+        
+                    </div>
+                </div>
+                <div class="card border border-0 card-design" >
+                    <div class="card-body">
+                        <div class="card-text ">CSS</div>
+                    </div>
+                </div>
+              
+               </div>
+
+               <div class="col-5   text-center design">
+                <div class="card rounded-circle card-design">
+                    <div class="card-body ">
+                        <div class="card-text">
+                            <div class="img-fluid ">
+                                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
+                                    <linearGradient id="q17mbB32E_FbIzPpfjq_Ta_W0YEwBDDfTeu_gr1" x1="16.309" x2="23.023" y1="1.101" y2="19.546" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f44f5a"></stop><stop offset=".443" stop-color="#ee3d4a"></stop><stop offset="1" stop-color="#e52030"></stop></linearGradient><path fill="url(#q17mbB32E_FbIzPpfjq_Ta_W0YEwBDDfTeu_gr1)" d="M26,17h-8c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h8V17z"></path><linearGradient id="q17mbB32E_FbIzPpfjq_Tb_W0YEwBDDfTeu_gr2" x1="15.64" x2="22.314" y1="14.636" y2="32.971" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ae4cd5"></stop><stop offset="1" stop-color="#9331bf"></stop></linearGradient><path fill="url(#q17mbB32E_FbIzPpfjq_Tb_W0YEwBDDfTeu_gr2)" d="M25,31h-7c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7V31z"></path><linearGradient id="q17mbB32E_FbIzPpfjq_Tc_W0YEwBDDfTeu_gr3" x1="14.81" x2="21.821" y1="26.357" y2="45.617" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#33c481"></stop><stop offset="1" stop-color="#21a366"></stop></linearGradient><path fill="url(#q17mbB32E_FbIzPpfjq_Tc_W0YEwBDDfTeu_gr3)" d="M18,45L18,45c-3.866,0-7-3.134-7-7v0c0-3.866,3.134-7,7-7h7v7C25,41.866,21.866,45,18,45z"></path><linearGradient id="q17mbB32E_FbIzPpfjq_Td_W0YEwBDDfTeu_gr4" x1="27.498" x2="34.119" y1=".512" y2="18.702" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f09ca2"></stop><stop offset="1" stop-color="#eb6773"></stop></linearGradient><path fill="url(#q17mbB32E_FbIzPpfjq_Td_W0YEwBDDfTeu_gr4)" d="M32,17h-7V3h7c3.866,0,7,3.134,7,7v0C39,13.866,35.866,17,32,17z"></path><linearGradient id="q17mbB32E_FbIzPpfjq_Te_W0YEwBDDfTeu_gr5" x1="28.714" x2="34.857" y1="14.972" y2="31.85" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#32bdef"></stop><stop offset="1" stop-color="#1ea2e4"></stop></linearGradient><circle cx="32" cy="24" r="7" fill="url(#q17mbB32E_FbIzPpfjq_Te_W0YEwBDDfTeu_gr5)"></circle>
+                                    </svg>
+                        </div>
+                          
+                        </div>
+        
+                    </div>
+                </div>
+                <div class="card border border-0 card-design" >
+                    <div class="card-body">
+                        <div class="card-text ">FIGMA</div>
+                    </div>
+                </div>
+              
+               </div>
+               <div class="col-5 text-center design">
+                <div class="card rounded-circle card-design " >
                     <div class="card-body ">
                         <div class="card-text">
                             <div class="img-fluid ">
@@ -285,7 +339,7 @@ I am excited about the endless possibilities in web development and look forward
                 </div>
               
                </div>
-                <div class="col-5 text-center">
+                <div class="col-5 text-center design">
                 <div class="card rounded-circle card-design " >
                     <div class="card-body ">
                         <div class="card-text">
@@ -306,7 +360,7 @@ I am excited about the endless possibilities in web development and look forward
                 </div>
               
                </div>
-                <div class="col-5 text-center">
+                <div class="col-5 text-center design">
                 <div class="card rounded-circle card-design " >
                     <div class="card-body ">
                         <div class="card-text">
@@ -327,7 +381,7 @@ I am excited about the endless possibilities in web development and look forward
                     </div>
                 </div>
               
-               </div> <div class="col-5 text-center">
+               </div> <div class="col-5 text-center design">
                 <div class="card rounded-circle card-design " >
                     <div class="card-body ">
                         <div class="card-text">
@@ -347,7 +401,7 @@ I am excited about the endless possibilities in web development and look forward
                     </div>
                 </div>
               
-               </div> <div class="col-5 text-center">
+               </div> <div class="col-5 text-center design">
                 <div class="card rounded-circle card-design " >
                     <div class="card-body ">
                         <div class="card-text">
@@ -367,7 +421,8 @@ I am excited about the endless possibilities in web development and look forward
                     </div>
                 </div>
               
-               </div> <div class="col-5 text-center">
+               </div> 
+               <div class="col-5 text-center design">
                 <div class="card rounded-circle card-design" >
                     <div class="card-body ">
                         <div class="card-text">
@@ -387,7 +442,20 @@ I am excited about the endless possibilities in web development and look forward
                     </div>
                 </div>
               
-               </div> <div class="col-5 text-center">
+               </div> 
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               <div class="col-5 text-center design">
                 <div class="card rounded-circle card-design " >
                     <div class="card-body ">
                         <div class="card-text">
@@ -401,13 +469,14 @@ I am excited about the endless possibilities in web development and look forward
         
                     </div>
                 </div>
+                
                 <div class="card border border-0 card-design2" >
                     <div class="card-body">
                         <div class="card-text ">MONGODB</div>
                     </div>
                 </div>
               
-               </div> <div class="col-5 text-center">
+               </div> <div class="col-5 text-center design">
                 <div class="card rounded-circle card-design" >
                     <div class="card-body ">
                         <div class="card-text">
@@ -427,7 +496,8 @@ I am excited about the endless possibilities in web development and look forward
                     </div>
                 </div>
               
-               </div> <div class="col-5 text-center">
+               </div> 
+               <div class="col-5 text-center design">
                 <div class="card rounded-circle card-design" >
                     <div class="card-body ">
                         <div class="card-text">
@@ -448,79 +518,114 @@ I am excited about the endless possibilities in web development and look forward
                 </div>
               
                </div>
-
+               
             </div>
         </div>
     </scetion>
 
     <section id="project">
-        <div class="container">
-            <div class="text-center display-5 mt-3">PROJECTS</div>
-            <div class="row">
-                <div class="col-4 my-4">
-                    <div class="card" style="width: 20rem;">
-                        <img src="" class="card-img-top " alt="">
+        <div class="container mt-5 pt-5">
+            <div class="text-center display-5    mt-3">PROJECTS</div>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4 my-4 ">
+                    <div class="card animate__animated animate__fadeInUp" >
+                        <img src="./images/exit.png" class="card-img-top  " alt="">
                         <div class="card-body">
-                            <h5 class="card-title">College Exit Survey Feedback </h5>
+                            <h5 class="card-title">Exit Survey Feedback </h5>
                             <p class="card-text fs-6">FullStack Project</p>
-                            <a href="" class="btn btn-primary btn-sm ">Live Demo</a>
+                            <a href="http://121.200.48.27:8081/ExitSurvey/LoginPage.php" class="btn btn-primary btn-sm ">Live Demo</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-4 my-4">
-                    <div class="card" style="width: 20rem;">
-                        <img src="" class="card-img-top " alt="">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4 my-4 ">
+                    <div class="card animate__animated animate__fadeInUp" >
+                        <img src="./images/coffee-time.png" class="card-img-top " alt="">
                         <div class="card-body">
-                            <h5 class="card-title">College Exit Survey Feedback </h5>
-                            <p class="card-text fs-6">FullStack Project</p>
-                            <a href="" class="btn btn-primary btn-sm ">Live Demo</a>
+                            <h5 class="card-title">Coffee Time </h5>
+                            <p class="card-text fs-6">Fronted Project</p>
+                            <a href="https://poovarasan13.github.io/CafeProject/" class="btn btn-primary btn-sm ">Live Demo</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-4 my-4">
-                    <div class="card" style="width: 20rem;">
-                        <img src="" class="card-img-top " alt="">
+                <div class="col-12 col-md-6 col-lg-4 col-xl-4 my-4 ">
+                    <div class="card animate__animated animate__fadeInUp" >
+                        <img src="./images/OrganicWeb.png" class="card-img-top " alt="">
                         <div class="card-body">
-                            <h5 class="card-title">College Exit Survey Feedback </h5>
-                            <p class="card-text fs-6">FullStack Project</p>
-                            <a href="" class="btn btn-primary btn-sm ">Live Demo</a>
+                            <h5 class="card-title">Organic Hub</h5>
+                            <p class="card-text fs-6">Fronted Project</p>
+                            <a href="https://poovarasan13.github.io/Organical-Store-Hub/" class="btn btn-primary btn-sm ">Live Demo</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-4 my-4">
-                    <div class="card" style="width: 20rem;">
-                        <img src="" class="card-img-top " alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">College Exit Survey Feedback </h5>
-                            <p class="card-text fs-6">FullStack Project</p>
-                            <a href="" class="btn btn-primary btn-sm ">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 my-4">
-                    <div class="card" style="width: 20rem;">
-                        <img src="" class="card-img-top " alt="">
-                        <div class="card-body">
-                            <h5 class="card-title">College Exit Survey Feedback </h5>
-                            <p class="card-text fs-6">FullStack Project</p>
-                            <a href="" class="btn btn-primary btn-sm ">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
+              
+               
+              
             </div>
         </div>
     </section>
 
-    <scection id="contact">
-        <div class="container">
-            <div class="text-center display-5">Contact Me</div>
-            <div class="row">
-                <div class="col"></div>
+    
+    <section class="bg-light py-5 " id="contact">
+        <div class="container pt-5">
+            <div class="text-center">
+                <h2>Contact Me</h2>
+                <p>We'd love to hear from you!</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form onsubmit="sendEmail(event)">
+                        <div class="mb-3">
+                            <label for="feedback-name" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="feedback-email" class="form-label">Your Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="feedback-message" class="form-label">Your Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary" >Send Message</button>
+                        </div>
+                        <div class="text-center mt-3">
+                            <p class="fw-bold" id="feedback"></p> 
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col text-center">Made by Poovarasan</div>
             </div>
         </div>
-    </scection>
-       
-        <button class="fixed-button btn btn-primary rounded-circle btn-lg" data-placement="left" data-toggle="tooltip" title="POOVARASAN">C</button>
+    </section>
+    <script>
+        (function(){
+           emailjs.init("j49BXGHrpAVID0k4R");
+        })();
+     
+        function sendEmail(event) {
+           event.preventDefault(); 
+     
+           var email = {
+               from_name: document.getElementById('name').value,
+               email_id: document.getElementById('email').value,
+               message: document.getElementById('message').value
+           };
+     
+           emailjs.send("service_ge4lsz6", "template_enp0y0s", email)
+              .then(function(res) {
+                   document.getElementById('feedback').innerText="Feedback Submitted Successfully";
+                // window.alert("Success: " + res.status);
+              }, function(error) {
+                document.getElementById('feedback').innerText="Feedback Not Submitted ";
+            });
+        }
+     </script>
+     <!-- &#10569; -->
+        <!-- <a href="#main" class="fixed-button btn btn-primary rounded-circle btn-lg" data-placement="left" data-toggle="tooltip" title="Go to Top">&#8657;</a> -->
+        <a href="#main" class="fixed-button btn btn-primary rounded-circle btn-lg" data-placement="left" data-toggle="tooltip" title="Go to Top">&#10569;</a>
 
 </body>
 </html>
