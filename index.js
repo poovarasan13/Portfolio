@@ -1,39 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Projects</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Animate.css for animation effects -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
-</head>
-<body>
-
-<section id="project" class="container mt-5 pt-5">
-  <div class="text-center display-5 mt-3">PROJECTS</div>
-  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3" id="projectCardsContainer"></div>
-</section>
-
-<div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body" id="projectModalBody">
-        
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-<script>
 
 async function loadProjects() {
   try {
@@ -76,7 +40,7 @@ function showProjectModal(projectIndex) {
     <p>${project.description}</p>
   `;
 
-  // Conditionally add fields based on availability
+ 
   if (project.Frontend) {
     modalContent += `<p><strong>Frontend:</strong> ${project.Frontend}</p>`;
   }
@@ -99,7 +63,3 @@ function showProjectModal(projectIndex) {
 
 
 document.addEventListener('DOMContentLoaded', loadProjects);
-</script>
-
-</body>
-</html>

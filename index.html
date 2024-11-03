@@ -12,6 +12,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="index.js"></script>
 <style>
     .logo{
   height:30px;
@@ -510,103 +511,24 @@ I am excited about the endless possibilities in web development and look forward
         </div>
     </scetion>
 
-    <section id="project">
-        <div class="container mt-5 pt-5">
-            <div class="text-center display-5    mt-3">PROJECTS</div>
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 ">
-               
-               
-                <div class="col-12 col-md-6 col-lg-4 col-xl-4 my-4 ">
-                    <div class="card animate__animated animate__fadeInUp" >
-                        <img src="./images/cms.png" class="card-img-top  " alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">CMS</h4>
-                            <h5 class="card-subtitle my-2">MernStack Project </h5>
-                            <p class="card-text fs-6">ReactJs,NodeJs,MONGODB,Express</p>
-                            <a href="https://github.com/poovarasan13/Construction_Management_System" class="btn btn-primary btn-sm ">Source Code</a>
-                        </div>
-                    </div>
-                </div>
+    <section id="project" class="container mt-5 pt-5">
+        <div class="text-center display-5 mt-3">PROJECTS</div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3" id="projectCardsContainer"></div>
+      </section>
 
-
-
-
-                <div class="col-12 col-md-6 col-lg-4 col-xl-4 my-4 ">
-                    <div class="card animate__animated animate__fadeInUp" >
-                        <img src="./images/exit.png" class="card-img-top  " alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Exit Survey Feedback </h4>
-                            <h5 class="card-subtitle my-2">FullStack Project </h5>
-                            <p class="card-text fs-6">HTML,Bootstrap,CSS,JS,PHP,SQL</p>
-                            <a href="http://121.200.48.27:8081/ExitSurvey/LoginPage.php" class="btn btn-primary btn-sm ">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="col-12 col-md-6 col-lg-4 col-xl-4 my-4 ">
-                    <div class="card animate__animated animate__fadeInUp" >
-                        <img src="./images/coffee-time.png" class="card-img-top " alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Coffee Time </h4>
-                            <h5 class="card-subtitle my-2">Fronted Project </h5>
-                            <p class="card-text fs-6">HTML,Bootstrap,CSS,JS</p>
-                            <a href="https://poovarasan13.github.io/CafeProject/" class="btn btn-primary btn-sm ">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 col-xl-4 my-4 ">
-                    <div class="card animate__animated animate__fadeInUp" >
-                        <img src="./images/OrganicWeb.png" class="card-img-top " alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Organic Hub </h4>
-                            <h5 class="card-subtitle my-2">Fronted Project </h5>
-                            <p class="card-text fs-6">HTML,Bootstrap,CSS,JS</p>
-                           
-                            <a href="https://poovarasan13.github.io/Organical-Store-Hub/" class="btn btn-primary btn-sm ">Live Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="col-12 col-md-6 col-lg-4 col-xl-4 my-4 ">
-                         <div class="card animate__animated animate__fadeInUp" >
-                        <img src="./images/todo.png" class="card-img-top " alt="">
-                        <div class="card-body">
-                            <h4 class="card-title">Todo List</h4>
-                            <h5 class="card-subtitle my-2">React Js Project </h5>
-                            <p class="card-text fs-6">Bootstrap,React JS,HTML</p>
-                           
-                            <a href="https://todo-list-70fc5.web.app/" class="btn btn-primary btn-sm ">Live Demo</a>
-                        </div>
-                    </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4 col-xl-4 my-4 ">
-                        <div class="card animate__animated animate__fadeInUp" >
-                       <img src="./images/task.png" class="card-img-top " alt="">
-                       <div class="card-body">
-                        <h4 class="card-title">Task Management</h4>
-                        <h5 class="card-subtitle my-2">FullStack Project</h5>
-                        <p class="card-text fs-6">HTML,CSS,Bootstrap,SpringBoot,SQL</p>
-
-                           <a href="https://poovarasan13.github.io/Organical-Store-Hub/" class="btn btn-primary btn-sm ">Source Code</a>
-                       </div>
-                   </div>
-                   </div>
-
-
-                </div>
-              
-               
+      <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="projectModalBody">
               
             </div>
+          </div>
         </div>
-    </section>
-
+      </div>
     <section id="education">
         <div class="container mt-5 ">
            <div class=" text-center display-5 ">EDUCATION</div>

@@ -1,0 +1,64 @@
+[
+  {
+    "title": "CMS",
+    "subtitle": "MernStack Project",
+    "description": "Multi-service platform for construction management.",
+    "imageUrl": "./images/cms.png",
+    "link": "https://github.com/poovarasan13/Construction_Management_System",
+    "linkText": "Source Code",
+    "Frontend": "ReactJs",
+    "Backend": "NodeJs, Express",
+    "Database": "MongoDB"
+  },
+  {
+    "title": "Exit Survey Feedback",
+    "subtitle": "FullStack Project",
+    "description": "A feedback survey platform",
+    "imageUrl": "./images/exit.png",
+    "link": "http://121.200.48.27:8081/ExitSurvey/LoginPage.php",
+    "linkText": "Live Demo",
+    "Frontend": "HTML, Bootstrap, CSS, JS",
+    "Backend": "PHP",
+    "Database": "SQL"
+  },
+  {
+    "title": "Coffee Time",
+    "subtitle": "Frontend Project",
+    "description": "A website for a coffee shop",
+    "imageUrl": "./images/coffee-time.png",
+    "link": "https://poovarasan13.github.io/CafeProject/",
+    "linkText": "Live Demo",
+    "Frontend": "HTML, Bootstrap, CSS, JS"
+  },
+  {
+    "title": "Organic Hub",
+    "subtitle": "Frontend Project",
+    "description": "An online organic store",
+    "imageUrl": "./images/OrganicWeb.png",
+    "link": "https://poovarasan13.github.io/Organical-Store-Hub/",
+    "linkText": "Live Demo",
+    "Frontend": "HTML, Bootstrap, CSS, JS"
+  },
+  {
+    "title": "Todo List",
+    "subtitle": "React Project",
+    "description": "A simple todo list application",
+    "imageUrl": "./images/todo.png",
+    "link": "https://todo-list-70fc5.web.app/",
+    "linkText": "Live Demo",
+    "Frontend": "React JS",
+    "Backend": null,
+    "Database": null
+  },
+  {
+    "title": "Task Management",
+    "subtitle": "FullStack Project",
+    "description": "A task management application",
+    "imageUrl": "./images/task.png",
+    "link": "https://poovarasan13.github.io/Organical-Store-Hub/",
+    "linkText": "Source Code",
+    "Frontend": "HTML, CSS, Bootstrap",
+    "Backend": "SpringBoot",
+    "Database": "SQL"
+  }
+]
