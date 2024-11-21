@@ -17,7 +17,10 @@ async function loadProjects() {
             <h4 class="card-title">${project.title}</h4>
             <h5 class="card-subtitle my-2">${project.subtitle}</h5>
             <p class="card-text">${project.description}</p>
-            <a href="${project.link}" class="btn btn-primary btn-sm" target="_blank">${project.linkText}</a>
+            <div class="row justify-content-center">
+            <div class="col-4"><a href="${project.link}" class="btn btn-primary btn-sm text-center" target="_blank">${project.linkText}</a>
+            </div></div>
+            
           </div>
         </div>
       `;
